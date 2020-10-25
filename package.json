@@ -6,14 +6,19 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "api": "nodemon --watch server/db.json server",
+    "api": "nodemon --watch server server/index.js",
     "lint": "eslint --ext .js,.jsx ./src"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hookform/resolvers": "^1.0.0",
+    "axios": "^0.20.0",
+    "joi": "^17.2.1",
+    "js-cookie": "^2.2.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-hook-form": "^6.9.5",
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {

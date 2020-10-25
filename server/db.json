@@ -1,4 +1,17 @@
 {
-  "users": [],
-  "posts": []
+  "users": [
+    {
+      "email": "dwiko@gmail.com",
+      "password": "$2a$10$NWOxo8lkf.FDTk6yBOLW1uE2iLOXCHKNjoxH22aVh7xxhqx5Rvdze",
+      "id": 1
+    }
+  ],
+  "posts": [
+    {
+      "title": "books",
+      "author": "hilmy",
+      "userId": 1,
+      "id": 1
+    }
+  ]
 }
