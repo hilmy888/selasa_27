@@ -11,7 +11,7 @@ import Login from '../screens/Login'
 import Register from '../screens/Register'
 import user from '../services/user.js'
 
-function Secured(children) {
+function Secured({ children }) {
   const [isLogin, setIsLogin] = useState(user.isLogin())
 
   useEffect(() => {
