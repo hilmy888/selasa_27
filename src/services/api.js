@@ -16,13 +16,14 @@ export function registerUser(params) {
 }
 
 export function loginUser(params) {
-  api.post('/signin', params)
+   return api.post('/signin', params)
   .then((response) => {
     const { data } = response
     user.logIn(data.accessToken)
     return true
-  }),
-    () => false
+  },
+  () => (false)
+  )
 }
 
 export function createPost(params) {
