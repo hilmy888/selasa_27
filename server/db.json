@@ -4,6 +4,11 @@
       "email": "dwiko@gmail.com",
       "password": "$2a$10$NWOxo8lkf.FDTk6yBOLW1uE2iLOXCHKNjoxH22aVh7xxhqx5Rvdze",
       "id": 1
+    },
+    {
+      "email": "tatang@gmail.com",
+      "password": "$2a$10$kxQmCDJHmCfryBtqiVwgFOtalPMQOqlUJC.ZpjCjUvjtsKZ8m5.x6",
+      "id": 2
     }
   ],
   "posts": [

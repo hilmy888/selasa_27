@@ -1,33 +1,15 @@
-import React, { Fragment, useState, useEffect } from 'react'
+import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
 } from 'react-router-dom'
 import NavigationHelper from './NavigationHelper'
 import Home from '../screens/Home'
 import Login from '../screens/Login'
 import Register from '../screens/Register'
-import user from '../services/user.js'
-
-function Secured({ children }) {
-  const [isLogin, setIsLogin] = useState(user.isLogin())
-
-  useEffect(() => {
-    if (user.isLogin()) {
-      setIsLogin(true)
-    } else {
-      setIsLogin(false)
-    }
-  }, []);
-
-  return (
-    <Fragment>
-      {isLogin ? children : (<Redirect to="/login" />)}
-    </Fragment>
-  )
-}
+import Secured from './Secured'
+import RedirectLogin from './RedirectLogin'
 
 export default function Base() {
   return (
@@ -40,10 +22,14 @@ export default function Base() {
           </Secured>
         </Route>
         <Route path="/login">
-          <Login />
+          <RedirectLogin>
+            <Login />
+          </RedirectLogin>
         </Route>
         <Route path="/register">
-          <Register />
+          <RedirectLogin>
+            <Register />
+          </RedirectLogin>
         </Route>
       </Switch>
     </Router>

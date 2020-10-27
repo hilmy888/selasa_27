@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/label-has-for */
+
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { createPost } from '../../services/api'
 
 export default function CreatePost() {
-  const {register, handleSubmit } = useForm()
-
+  const { register, handleSubmit } = useForm()
 
   return (
     <form onSubmit={handleSubmit(createPost)}>
