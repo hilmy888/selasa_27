@@ -1,15 +1,10 @@
-import React from 'react'
-import { Provider } from 'react-redux'
-import { store, persistor } from '../store'
-import { PersistGate } from 'redux-persist/integration/react'
-import Base from './Base'
+import React, { Fragment } from 'react'
 
 function App() {
   return (
-    <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}></PersistGate>
-      <Base />
-    </Provider>
+    <Fragment>
+      START HERE
+    </Fragment>
   )
 }
 
