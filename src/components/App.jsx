@@ -1,11 +1,17 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import { Provider } from 'react-redux'
+// import FormRegister from './FormRegister'
+// import FormLogin from './FormLogin'
+import Base from './Base'
+import store from '../Store'
 
 function App() {
   return (
-    <Fragment>
-      START HERE
-    </Fragment>
+    <Provider store={store}>
+      <div>
+        <Base />
+      </div>
+    </Provider>
   )
 }
-
 export default App
